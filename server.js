@@ -130,4 +130,4 @@ require('http').createServer(async (req, res) => {
       res.end(JSON.stringify({ success: false, message: e.message }));
     }
   });
-}).listen(PORT, () => console.log('Proxy running on port ' + PORT));
+}).listen(PORT, '0.0.0.0', () => console.log('Proxy running on port ' + PORT));
